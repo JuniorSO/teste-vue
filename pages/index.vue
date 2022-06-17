@@ -3,8 +3,12 @@
 <template>
   <div>
     <Counter />
-    <NuxtLink to="/about">Ir para página inicial!</NuxtLink>
+    <NuxtLink to="/about">Ir para página about!</NuxtLink>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  font-family: sans-serif;
+}
+</style>
