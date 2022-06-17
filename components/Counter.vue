@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-const counter = ref(0);
-const toOneHundred = computed(() => 100 - counter.value);
+const count = ref(0);
+const toOneHundred = computed(() => 100 - count.value);
 
 function sumCounter() {
-  counter.value += 1;
+  count.value += 1;
 }
 </script>
 
 <template>
   <div>
-    <h1>{{ counter }}</h1>
+    <h1>{{ count }}</h1>
     <button @click="sumCounter()">Contador</button>
     <span>Para atingir 100, faltam {{ toOneHundred }} cliques!</span>
   </div>
